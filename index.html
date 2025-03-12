@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuració Router Cisco dev07</title>
+</head>
+<body>
+    <h2>Generador de Configuració per a Router Cisco 2811-Grup7-FaseA</h2>
+    <form action="generate_config.php" method="POST">
+        <label>Hostname:</label>
+        <input type="text" name="hostname" required><br><br>
+
+        <label>FastEthernet 0/0 - IP:</label>
+        <input type="text" name="fa0_0_ip" required>
+        <label>Máscara:</label>
+        <input type="text" name="fa0_0_mask" required><br><br>
+
+        <label>FastEthernet 0/1 - IP:</label>
+        <input type="text" name="fa0_1_ip" required>
+        <label>Máscara:</label>
+        <input type="text" name="fa0_1_mask" required><br><br>
+
+        <label>Serial 0/0/0 - IP:</label>
+        <input type="text" name="s0_0_0_ip" required>
+        <label>Máscara:</label>
+        <input type="text" name="s0_0_0_mask" required>
+        <label>Clock Rate:</label>
+        <input type="text" name="s0_0_0_clock" required><br><br>
+
+        <label>Serial 0/0/1 - IP:</label>
+        <input type="text" name="s0_0_1_ip" required>
+        <label>Máscara:</label>
+        <input type="text" name="s0_0_1_mask" required><br><br>
+
+        <button type="submit">Generar Configuració</button>
+    </form>
+</body>
+</html>
+
